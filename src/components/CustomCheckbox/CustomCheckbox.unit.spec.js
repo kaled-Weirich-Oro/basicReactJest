@@ -7,7 +7,9 @@ describe('<CustomCheckbox />', () => {
   it('should render the heading', () => {
     render(<CustomCheckbox />)
 
-    expect(screen.getByRole('heading', { name: /CustomCheckbox/i })).toBeInTheDocument()
+    
+    expect(screen.getByText('Checkbox ativo')).toBeInTheDocument();
+//    expect(screen.getByRole('heading', { name: /CustomCheckbox/i })).toBeInTheDocument()
 
   })
 
